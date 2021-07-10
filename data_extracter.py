@@ -20,4 +20,4 @@ for a in soup.findAll('div', attrs={'class':'_4ddWXP'}):
     rating.append(rat.text)
 
 df = pd.DataFrame({'Product Name':products,'Price':prices, 'Rating':rating})
-df.to_csv('_flip2.csv', index=True, encoding='utf-8')
+df.to_csv('data.csv', index=True, encoding='utf-8')
